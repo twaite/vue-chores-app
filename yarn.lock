@@ -6490,6 +6490,10 @@ vue-loader@^15.4.2:
     vue-hot-reload-api "^2.3.0"
     vue-style-loader "^4.1.0"
 
+vue-material-design-icons@^2.1.1:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/vue-material-design-icons/-/vue-material-design-icons-2.1.1.tgz#16470d9f21d79fc7d95405d83990a8ac9e472b0c"
+
 vue-property-decorator@^7.0.0:
   version "7.1.1"
   resolved "https://registry.yarnpkg.com/vue-property-decorator/-/vue-property-decorator-7.1.1.tgz#0b1eefde50a7451e911ad44b91258010ffc08d01"
