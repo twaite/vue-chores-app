@@ -13,9 +13,9 @@ const rowProps = {
   }
 }
 
-const CRow = styled('div', rowProps)`
+const CCol = styled('div', rowProps)`
   display: flex;
-  justify-content: ${props => props.justify};
+  flex-direction: column;
 `;
 
-export default CRow;
+export default CCol;

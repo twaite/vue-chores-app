@@ -1,7 +1,7 @@
 <template>
   <c-styled-header>
     <c-styled-app-title>My Chores</c-styled-app-title>
-    <c-header-icon-wrapper>
+    <c-header-icon-wrapper @click="$emit('openMenu')">
       <menu-icon></menu-icon>
     </c-header-icon-wrapper>
   </c-styled-header>
@@ -11,11 +11,13 @@
   import Vue from 'vue';
   import Component from 'vue-class-component';
   import styled from 'vue-styled-components';
+  import styleVars from '@/style-vars';
 
   import MenuIcon from 'vue-material-design-icons/Menu';
+  import CMenu from '@/components/common/c-menu';
 
   const CStyledHeader = styled.header`
-    background-color: lightseagreen;
+    background-color: ${styleVars.primary};
     padding: 0.5rem;
     color: white;
   `;
@@ -35,6 +37,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    font-size: 1.5rem;
   `;
 
   @Component({
@@ -42,6 +45,7 @@
       CHeaderIconWrapper,
       CStyledAppTitle,
       CStyledHeader,
+      CMenu,
       MenuIcon,
     },
   })
