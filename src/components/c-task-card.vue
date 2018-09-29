@@ -1,8 +1,8 @@
 <template>
   <c-card>
     <c-task-card-title>{{title}}</c-task-card-title>
-    <c-space all=1></c-space>
-    <c-space all=2 v-for="i in (1, 3)">
+    <c-space :all=1></c-space>
+    <c-space :all=2 v-for="i in (1, 3)" :key="i">
       <c-row>
         <input type="checkbox">
         <label>Task {{i}}</label>
@@ -12,7 +12,7 @@
 </template>
 
 <script lang="ts">
-import Vue from 'vue'
+import Vue from 'vue';
 import Component from 'vue-class-component';
 import styled from 'vue-styled-components';
 
@@ -29,11 +29,11 @@ const CTaskCardTitle = styled.h3`
     CCard,
     CTaskCardTitle,
     CRow,
-    CSpace
+    CSpace,
   },
   props: {
     title: String,
   },
 })
-export default class CTaskCard extends Vue {};
+export default class CTaskCard extends Vue {}
 </script>

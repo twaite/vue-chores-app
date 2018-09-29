@@ -7,14 +7,13 @@
   </c-styled-header>
 </template>
 
-<script>
+<script lang="ts">
   import Vue from 'vue';
   import Component from 'vue-class-component';
   import styled from 'vue-styled-components';
   import styleVars from '@/style-vars';
 
   import MenuIcon from 'vue-material-design-icons/Menu';
-  import CMenu from '@/components/common/c-menu';
 
   const CStyledHeader = styled.header`
     background-color: ${styleVars.primary};
@@ -45,7 +44,6 @@
       CHeaderIconWrapper,
       CStyledAppTitle,
       CStyledHeader,
-      CMenu,
       MenuIcon,
     },
   })

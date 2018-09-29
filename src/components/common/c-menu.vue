@@ -12,7 +12,7 @@
   </c-menu-panel>
 </template>
 
-<script>
+<script lang="ts">
   import Vue from 'vue';
   import Component from 'vue-class-component';
   import styled from 'vue-styled-components';
@@ -43,9 +43,9 @@
     width: 100%;
     text-align: center;
     display: block;
-    background: ${props => props.selected ? '#a8f0ec' : ''};
+    background: ${(props) => props.selected ? '#a8f0ec' : ''};
     border-radius: 1rem;
-  `
+  `;
 
   @Component({
     components: {

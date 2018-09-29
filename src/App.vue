@@ -17,7 +17,7 @@
   import styled from 'vue-styled-components';
   import styleVars from '@/style-vars';
   
-  import CHeader from '@/components/common/c-header';
+  import CHeader from '@/components/common/c-menu';
   import CMenu from '@/components/common/c-menu';
 
   const CApp = styled.div`
@@ -49,8 +49,8 @@
     },
   })
   export default class App extends Vue {
-    showMenu: boolean = false;
-    showBackdrop: boolean = false;
+    private showMenu: boolean = false;
+    private showBackdrop: boolean = false;
 
     private openMenu(): void {
       this.showMenu = true;
