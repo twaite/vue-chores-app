@@ -1,5 +1,4 @@
-// @ts-ignore
-import styled from 'vue-styled-components'; // TODO: fix this error
+import styled from 'vue-styled-components';
 
 const options = [0, 1, 2, 3, 4, 5];
 const optionsMap = ['0', '.25rem', '.5rem', '1rem', '1.5rem', '3rem'];

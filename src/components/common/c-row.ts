@@ -1,7 +1,4 @@
-// @ts-ignore
-import styled from 'vue-styled-components'; // TODO: fix this error
-
-// TODO: define props
+import styled from 'vue-styled-components';
 
 const rowProps = {
   justify: {

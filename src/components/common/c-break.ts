@@ -1,4 +1,3 @@
-// @ts-ignore
 import styled from 'vue-styled-components';
 import styleVars from '@/style-vars';
 

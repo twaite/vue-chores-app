@@ -1,5 +1,4 @@
-// @ts-ignore
-import styled from 'vue-styled-components'; // TODO: fix this error
+import styled from 'vue-styled-components';
 import styledVars from '@/style-vars';
 
 const CCard = styled.div`
