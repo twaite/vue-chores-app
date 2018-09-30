@@ -1,5 +1,7 @@
 <template>
-  <CApp id="app">
+  <CApp id="app" 
+    v-touch:swipe.left="openMenu"
+    v-touch:swipe.right="closeMenu">
     <transition name="backdrop">
       <c-backdrop v-if="showBackdrop" @click="closeMenu"></c-backdrop>
     </transition>
@@ -24,6 +26,7 @@
     font-family: 'Montserrat';
     margin: 0;
     color: ${styleVars.grey.dark};
+    height: 100vh;
 
     * {
       box-sizing: border-box;
