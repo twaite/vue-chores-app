@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import MyChores from './views/my-chores';
-import AddChore from './views/add-chores';
+import MyChores from './views/my-chores.vue';
+import AddChore from './views/add-chores.vue';
 
 Vue.use(Router);
 

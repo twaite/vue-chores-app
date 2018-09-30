@@ -17,8 +17,8 @@
   import styled from 'vue-styled-components';
   import styleVars from '@/style-vars';
   
-  import CHeader from '@/components/common/c-menu';
-  import CMenu from '@/components/common/c-menu';
+  import CHeader from '@/components/common/c-header.vue';
+  import CMenu from '@/components/common/c-menu.vue';
 
   const CApp = styled.div`
     font-family: 'Montserrat';

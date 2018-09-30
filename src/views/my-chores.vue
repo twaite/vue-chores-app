@@ -9,7 +9,7 @@ import Vue from 'vue';
 import Component from 'vue-class-component';
 
 import CSpace from '@/components/common/c-space';
-import CTaskCard from '@/components/c-task-card';
+import CTaskCard from '@/components/c-task-card.vue';
 import CCol from '@/components/common/c-col';
 
 @Component({
